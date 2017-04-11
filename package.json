@@ -1,0 +1,8 @@
+{
+  "name": "Redux-training",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Kazooooo/Redux-training.git",
+  "author": "Kazooooo <cest93@gmail.com>",
+  "license": "MIT"
+}
