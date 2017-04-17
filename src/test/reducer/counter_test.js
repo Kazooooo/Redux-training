@@ -3,7 +3,7 @@ import { INCREMENT, DECREMENT } from '../../js/actions/types';
 
 import counter from '../../js/reducer/counter';
 
-describe('Comments Reducer', () => {
+describe('Counter Reducer', () => {
   it('handles action with unknown value', () => {
     expect(counter(undefined, {})).to.eql(0);
   });
