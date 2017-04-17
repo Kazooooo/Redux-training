@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { INCREMENT, DECREMENT } from '../../js/actions/types';
 
-import counter from '../../js/reducer/counter';
+import counter from '../../js/reducers/counter';
 
 describe('Counter Reducer', () => {
   it('handles action with unknown value', () => {
