@@ -4,5 +4,23 @@
   "main": "index.js",
   "repository": "git@github.com:Kazooooo/Redux-training.git",
   "author": "Kazooooo <cest93@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "deploy": "NODE_ENV=production webpack -p"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  }
 }
