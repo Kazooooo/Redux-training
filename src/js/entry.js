@@ -1,2 +1,9 @@
-const hello = 'hello';
-console.log(hello);
+class CounterApp {
+  constructor() {
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const CounterApp = new CounterApp();
+  CounterApp.render();
+});
