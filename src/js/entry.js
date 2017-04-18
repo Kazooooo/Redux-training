@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 import reducers from './reducers';
-import { INCREMENT } from './actions/types';
+import { increment, decrement } from './actions';
 
 /* eslint-disable no-underscore-dangle */
 const store = createStore(
@@ -10,12 +10,16 @@ const store = createStore(
 /* eslint-enable */
 
 const render = () => {
-  document.body.innerText = store.getState().counter;
+  document.getElementById('counter').value = store.getState().counter;
 };
 
 store.subscribe(render);
 render();
 
-document.addEventListener('click', () => {
-  store.dispatch({ type: INCREMENT });
+document.getElementById('increment').addEventListener('click', () => {
+  store.dispatch(increment());
+});
+
+document.getElementById('decrement').addEventListener('click', () => {
+  store.dispatch(decrement());
 });
